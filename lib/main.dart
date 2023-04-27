@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:payment_ui_task/views/paymentPage.dart';
-
+import 'package:payment_ui_task/utils/colours.dart';
+import 'package:google_fonts/google_fonts.dart';
 void main() {
   runApp(const MyApp());
 }
@@ -14,10 +15,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: const PaymentPage(),
-      theme: Theme.of(context).copyWith(
-        colorScheme: Theme.of(context).colorScheme.copyWith(
-          primary: const Color(0x0ff0e7b9),
-        ),
+      theme: ThemeData(
+        primaryColor: MyColorClass.blue,
+        fontFamily: GoogleFonts.poppins().fontFamily,
       ),
     );
   }
