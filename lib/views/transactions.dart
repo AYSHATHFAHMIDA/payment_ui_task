@@ -11,9 +11,7 @@ class Transaction extends StatelessWidget {
         ListTile(title: Text('Transaction'),),
         SizedBox(height: 5,),
         MyContainers(),
-        SizedBox(height: 5,)
-
-
+        SizedBox(height: 5,),
       ],
     );
   }
@@ -63,7 +61,7 @@ Widget MyContainers(){
           ),
           height: 25,
           width: 120,
-          child: Center(child: Text('Recieved')),
+          child: Center(child: Text('Refunds')),
         )
 
       ],
