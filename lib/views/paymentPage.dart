@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:payment_ui_task/utils/colours.dart';
+// import 'package:payment_ui_task/utils/colours.dart';
 import 'package:payment_ui_task/views/expansion_tile.dart';
 import 'package:payment_ui_task/views/transaction_limit.dart';
 import 'package:payment_ui_task/views/payment_overview.dart';
@@ -28,6 +28,8 @@ class PaymentPage extends StatelessWidget {
       ),
       body:  SingleChildScrollView(
         child: Column(
+          // mainAxisAlignment: MainAxisAlignment.start,
+          // crossAxisAlignment: CrossAxisAlignment.center,
           children:  const [
           Padding(
             padding: EdgeInsets.all(20),
