@@ -1,18 +1,22 @@
 import 'package:flutter/material.dart';
-import 'package:payment_ui_task/utils/colours.dart';
+import 'package:payment_ui_task/constants/colours.dart';
+import 'package:payment_ui_task/views/payment_pages/widgets/MyListView.dart';
+
 
 class Transaction extends StatelessWidget {
   const Transaction({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+
     return Column(
-      children: [
-        ListTile(title: Text('Transaction'),),
-        SizedBox(height: 5,),
-        MyContainers(),
-        SizedBox(height: 5,),
-      ],
+        children: [
+          ListTile(title: Text('Transaction'),),
+          SizedBox(height: 5,),
+          MyContainers(),
+          SizedBox(height: 5,),
+          MyList(),
+        ],
     );
   }
 }
@@ -20,6 +24,7 @@ class Transaction extends StatelessWidget {
 Widget MyContainers(){
   return SingleChildScrollView(
     scrollDirection: Axis.horizontal,
+
     child: Row(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: [
@@ -33,7 +38,7 @@ Widget MyContainers(){
           ),
           height: 25,
           width: 120,
-          child: Center(child: Text('on Hold')),
+          child: Center(child: Text('on Hold',)),
         ),
         SizedBox(width: 5,),
         Container(
@@ -41,6 +46,7 @@ Widget MyContainers(){
             // border:  Border.all(
             //   color: MyColorClass.blue,
             // ),
+
             color: MyColorClass.blue,
             borderRadius: BorderRadius.all(Radius.circular(20)),
 

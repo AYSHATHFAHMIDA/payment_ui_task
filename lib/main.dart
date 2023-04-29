@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:payment_ui_task/views/paymentPage.dart';
-import 'package:payment_ui_task/utils/colours.dart';
+import 'package:payment_ui_task/views/payment_pages/widgets/MyListView.dart';
+import 'package:payment_ui_task/views/payment_pages/paymentPage.dart';
+import 'package:payment_ui_task/constants/colours.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 
@@ -20,6 +21,7 @@ class MyApp extends StatelessWidget {
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
         home: const PaymentPage(),
+        // home: MyList(),
         theme: ThemeData(
           primaryColor: MyColorClass.blue,
           fontFamily: GoogleFonts.poppins().fontFamily,
