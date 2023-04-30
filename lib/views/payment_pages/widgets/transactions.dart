@@ -10,11 +10,14 @@ class Transaction extends StatelessWidget {
   Widget build(BuildContext context) {
 
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          ListTile(title: Text('Transaction'),),
-          SizedBox(height: 5,),
+          // ListTile(title: Text('Transaction'),),
+          SizedBox(height: 12,),
+          Text('Transaction',style: TextStyle(fontSize: 14,fontWeight: FontWeight.w700),),
+          SizedBox(height: 12,),
           MyContainers(),
-          SizedBox(height: 5,),
+          SizedBox(height: 20,),
           MyList(),
         ],
     );

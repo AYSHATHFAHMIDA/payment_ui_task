@@ -28,33 +28,35 @@ class PaymentPage extends StatelessWidget {
         elevation: 1,
       ),
       body:  SingleChildScrollView(
-        scrollDirection: Axis.vertical,
-        child: Column(
-          // mainAxisAlignment: MainAxisAlignment.start,
-          // crossAxisAlignment: CrossAxisAlignment.center,
-          // mainAxisSize: MainAxisSize.max,
-          // verticalDirection: VerticalDirection.down,
-          children:  const [
-          Padding(
-            padding: EdgeInsets.all(20),
-            child: TransactionLimit(),
-          ),
-            // SizedBox(height: 5,),
-            // ListTile(
-            //   title: Text('Default Payment'),
-            //
-            // )
-            MyListTile(),
-            // SizedBox(height: 5,),
-            ExpansionTile(
+        // scrollDirection: Axis.vertical,
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 10.0),
+          child: Column(
+            // mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            // mainAxisSize: MainAxisSize.max,
+            // verticalDirection: VerticalDirection.down,
+            children:  const [
+            TransactionLimit(),
+              // SizedBox(height: 5,),
+              // ListTile(
+              //   title: Text('Default Payment'),
+              //
+              // )
+              MyListTile(),
+              // SizedBox(height: 5,),
+              // ExpansionTile(
+              //
+              //     title: Text('Payment overview',style: TextStyle(fontSize: 16),),
+              //   children: [
+              //     PaymentOverview(),
+              //   ],
+              // ),
+              PaymentOverview(),
+              Transaction(),
 
-                title: Text('Payment overview',style: TextStyle(fontSize: 16),),
-              children: [
-                PaymentOverview(),
-                Transaction(),
-              ],
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );
